@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    
+ <link rel="stylesheet" type="text/css" href = "estilo.css" />  
+
+<script>
+
+	function validarSenha(){
+
+        pwd = document.cadastro.pwd.value;
+        confsenha = document.cadastro.confsenha.value;
+        if (pwd != confsenha){ 
+             alert("Senhas nao conferem!!!");
+	     return false;
+        }
+	document.cadastro.submit();
+	} 
+</script>
+</head>
+
+<body>
+  
+<center>  
+    
+<div id="divCad" >
+
+
+
+
+
+<div id="cliente"> 
+
+<img src="imagens/user5.png" align="left" style="width:60px; margin-top: 8px;">
+
+<div id="link_log">
+
+<a href="login.html"> <button class="botaoAcesso"> Acesso </button> </a>
+
+</div>
+
+
+ </div> 
+
+
+<div id="logomarca">
+<img src="imagens/storm.png" style="width:150px"> 
+
+<!-- fechamento da div logomarca -->
+</div>
+    
+    
+   
+
+
+
+<div id="navbar">
+<center>
+ <a href="index.html"><button class="botaoMenu">Home</button></a>&emsp;&emsp;&emsp;&emsp;
+
+     <a href="produtos.php"><button class="botaoMenu">Bottons</button></a>&emsp;&emsp;&emsp;&emsp;
+
+     <a href="design.html"><button class="botaoMenu">Design</button></a>&emsp;&emsp;&emsp;&emsp;
+
+     <a href="contato.html"><button class="botaoMenu">Contato</button></a>&emsp;&emsp;&emsp;&emsp;
+
+  </center>
+   
+     <div id = "cadastro" class="dadosLogin">
+         
+        
+        <form method="post" action="cadastro_cliente.php" name="cadastro" onsubmit="validarSenha(); return false">
+
+	<input type="text" name="nome" placeholder="Nome" class="caixaNome" maxlength="50" required>
+	<input type="text" name="end" placeholder="Endere&ccedil;o" class="caixaEndereco" maxlength="50"required>
+	<input type="text" name="cep" placeholder="xxxxx-xxx" class="caixaCep" maxlength="8"  pattern="[0-9]+$" required>
+	<input type="text" name="tel" placeholder="(xx) 9xxxx-xxxx" class="caixaTelefone" maxlength="11"  pattern="[0-9]{2}[0-9]{5}[0-9]{4}" required>
+	<input type="text" name="email" placeholder="ex - us@dominio.com" class="caixaEmail" maxlength="50" required>
+        <input type="password" name="pwd" placeholder="Senha" class="caixaSenha" maxlength="32" required>
+	<input type="password" name="confsenha" placeholder="Repita a senha" class="caixaConfSen" maxlength="32" required> <!--pattern="(?=.*[a-z])(?=.*[A-Z])"-->
+	
+
+	
+
+
+        <input type="submit" value="Cadastrar"  class="botaoCadastrar">
+         <input type="reset"  value="Limpar" class="botaoLimparCad">
+        <p class="txtNome">Nome:</p>
+	<p class="txtEndereco">Endere&ccedil;o:</p>
+	<p class="txtCep">CEP:</p>
+	<p class="txtTelefone">Telefone :</p>
+	<p class="txtEmail">Email :</p>
+	<p class="txtSenha">Senha :</p>
+	<p class="txtConfSenha">Confirme a senha :</p>
+
+
+
+	
+
+	
+	 <h1 class="loginGrande">---- CADASTRO ---</h1>
+            </form>
+    
+    </div>
+    <br><br><br>
+<br>
+   
+
+<div id="rodape"> 
+    <br><br><br>
+   <center>
+ <a href="index.html"><button class="botaoMenu">Home</button></a>&emsp;&emsp;&emsp;&emsp;
+
+     <a href="produtos.php"><button class="botaoMenu">Bottons</button></a>&emsp;&emsp;&emsp;&emsp;
+
+     <a href="design.html"><button class="botaoMenu">Design</button></a>&emsp;&emsp;&emsp;&emsp;
+
+     <a href="contato.html"><button class="botaoMenu">Contato</button></a>&emsp;&emsp;&emsp;&emsp;
+
+  
+    
+    <a href="cadastro.html"><button class="botaoMenu">Topo</button></a>
+    
+    </center>
+<!-- fechamento da div rodape--> 
+</div>       
+
+<!-- fechamento da div m e-->
+</div>  
+ 
+</center>             </body>
+</html>

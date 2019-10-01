@@ -1,0 +1,50 @@
+session_start();
+conecta banco
+$id=$_SESSION['id'];
+
+
+$func="select * from clientes where codcli=$id";
+    $query=pg_query($banco,$func);
+    $rg=pg_fetch_row($query);
+
+----- php ------
+
+-------------dentro do html --------
+
+ <?php if ($id == 'admin'): ?>
+                
+                  <ul class="list">
+                <li>
+                   <label>ADMIN &#9660;</label>
+                    <ul>
+                       <li><a href="login.php">Sair</a></li>
+                        <li><a href="cadastroProd.php">AddProd</a></li>
+
+                    </ul>
+                </li>
+                </ul>   
+              <?php elseif ($id == null): ?>
+                
+                  <ul class="list">
+                <li>
+                   <label>Entrar &#9660;</label>
+                    <ul>
+                        <li><a href="login.php">Logar</a></li>
+                        <li><a href="cadastro.php">Cadastrar</a></li>
+
+                    </ul>
+                </li>
+                </ul>
+                
+                <?php else: ?> 
+                <ul class="list">
+                <li>
+                   <label><?php echo"$rg[1]";?>&#9660;</label>
+                    <ul>
+                        <li><a href="login.php">Sair</a></li>
+                    </ul>
+                </li>
+                </ul>
+                <?php endif; ?>
+                 
+                </div>

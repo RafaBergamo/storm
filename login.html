@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    
+    <title>Login</title>
+    
+ <link rel="stylesheet" type="text/css" href = "estilo.css" />  
+<script>
+
+function capLock(e)
+{
+	kc = e.keyCode?e.keyCode:e.which;
+	sk = e.shiftKey?e.shiftKey:((kc == 16)?true:false);
+	if(((kc >= 65 && kc <= 90) && !sk)||((kc >= 97 && kc <= 122) && sk))
+		document.getElementById('divCaps').style.visibility = 'visible';
+ 	else
+  		document.getElementById('divCaps').style.visibility = 'hidden';
+}
+</script>   
+
+
+</head>
+<body>
+  
+<center>  
+    
+<div id="log" >
+
+<div id="cliente"> 
+
+<img src="imagens/user5.png" align="left" style="width:60px; margin-top: 8px;">
+
+<div id="link_log">
+
+<a href="login.html"> <button class="botaoAcesso"> Acesso </button> </a>
+
+</div>
+
+
+ </div> 
+
+ 
+
+
+<div id="logomarca">
+<img src="imagens/storm.png" style="width:150px"> 
+
+<!-- fechamento da div logomarca -->
+</div>
+    
+   
+
+
+
+<div id="navbar">
+<center>
+ <a href="index.html"><button class="botaoMenu">Home</button></a>&emsp;&emsp;&emsp;&emsp;
+
+     <a href="produtos.php"><button class="botaoMenu">Bottons</button></a>&emsp;&emsp;&emsp;&emsp;
+
+     <a href="design.html"><button class="botaoMenu">Design</button></a>&emsp;&emsp;&emsp;&emsp;
+
+     <a href="contato.html"><button class="botaoMenu">Contato</button></a>&emsp;&emsp;&emsp;&emsp;
+
+  </center>
+
+    </div>
+   
+     <div id = "login" class="dadosLogin">
+         
+        
+        <form method="post" action="logar.php">
+        <input type="text" name="email" placeholder="ex - us@dominio.com" class="caixaEmail_Login">
+        <input type="password" name="senha" placeholder="Senha" class="caixaSenha_Login" onkeypress="capLock(event)">
+	
+	
+        <input type="submit" name="enviar" value="Login" class="botaoLogin">
+         <input type="reset" name="enviar" value="Cancelar" class="botaoLimpar">
+
+        <p class="txtEmail_Login">Email:</p>
+         <p class="txtSenha_Login">Senha:</p>
+             <h1 class="loginGrande">---- LOGIN ---</h1>
+            </form>
+ 	<a href="cadastro.html"> <button class="botaoCadastre"> Cadastre-se </button> </a>
+
+
+	 <div id="divCaps" style="visibility:hidden"> 
+		
+	<img src="imagens/warning-icon-24.png" style="width:25px">  
+	<p> &nbsp;Caps Lock ligado!!</p>
+       
+	
+	</div>
+    </div>
+    <br><br><br>
+<br>
+   
+
+<div id="rodape"> 
+    <br><br><br>
+  <center>
+ <a href="index.html"><button class="botaoMenu">Home</button></a>&emsp;&emsp;&emsp;&emsp;
+
+     <a href="produtos.php"><button class="botaoMenu">Bottons</button></a>&emsp;&emsp;&emsp;&emsp;
+
+     <a href="design.html"><button class="botaoMenu">Design</button></a>&emsp;&emsp;&emsp;&emsp;
+
+     <a href="contato.html"><button class="botaoMenu">Contato</button></a>&emsp;&emsp;&emsp;&emsp;
+
+
+    <a href="login.html"><button class="botaoMenu">Topo</button></a>
+    
+    
+<!-- fechamento da div rodape--> 
+</div>       
+
+<!-- fechamento da div m e-->
+</div>  
+ 
+</center>             </body>
+</html>

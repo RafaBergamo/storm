@@ -1,0 +1,1083 @@
+/* configurando itens do corpo da página */
+
+body {background-color: grey; font-family: verdana; font-size: 20px; text-align: justify;}
+
+/* configurando itens do cabeçalho */
+h4 {text-align: center;}
+h5 {text-align: left;font-family: verdana; text-align: left;}
+h1 {font-size: 25px; font-weight: bold;}
+p { text-align: left;}
+a:link {
+    color: red;
+    text-decoration: none;
+}
+a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+/* Definindo a div mae, a div que tem todas as outras divs dentro dela */
+
+/* No exemplo da div mae a seguir, a dimensão vertical (ou profundidade ), ou ainda height foi de 1200px */
+
+/* A dimensão mínima da pág. é, vertical/profundidade/height é de 800px (pode ser maior) */
+
+#mae {background-color: lightgrey;
+width:999px;
+height: 1450px;
+
+    
+}
+
+#log {background-color: lightgrey;
+width:999px;
+height: 850px;
+
+    
+}
+
+#prod {background-color: lightgrey;
+width:999px;
+height: 2305px;
+
+    
+}
+#divCad {background-color: lightgrey;
+width:999px;
+height: 1115px;
+
+    
+}
+
+
+
+#login{
+    background-color: lightgrey;
+    
+    width: 999px;
+    height: 350px;
+} 
+#cad{
+    background-color: lightgrey;
+    
+    width: 999px;
+    height: 600px;}
+
+
+#produtos{background-color: dimgray;
+width:1000px;
+height: 800px; 
+    
+}
+#contato {background-color: lightgrey;
+width:999px;
+height: 1200px;
+    
+}
+
+
+/* Definindo a div logomarca, que deve ter o arquivo da imagem da logomarca */
+
+
+#cliente{
+
+  position:absolute;
+  height: 75px;
+  width: 250px;
+  margin-left: 750px;
+  float: center;
+  	
+
+}
+#link_log{
+  
+   margin-top:45px;
+
+}
+
+#logomarca{
+    text-align: left;
+    width: 999px;
+    height: 75px;
+}
+
+ #home
+{
+   z-index:1;
+    width: 500px;
+    height: 75px;
+    float: center;
+    
+    
+}
+carrinho{
+    
+z-index:2;
+    width: 800px;
+    float: right;
+    margin-top: 30px;
+    position:absolute;
+} 
+/* Definindo a div links, todos os links principais devem estar dentro dessa div */
+
+#navbar{
+
+    background-color: #4294FF;
+    width: 999px;
+    height: 40px; 
+
+}   
+
+
+/* Definindo a div img_principal, dentro dessa div deve ser inserido a maior imagem do produto */
+
+#img_principal{
+    background-color:lightgrey;    
+    width: 999px;
+    height: 350px;
+}   
+
+/* Definindo a div txt_principal, dentro dessa div deve ser inserido o texto da imagem maior */
+
+
+#txt_principal{
+    background-color: lightgray;
+    
+    width: 999px;
+    height: 100px;
+}   
+
+/* Definindo a div img_txt, essa div é utilizada para armazenar as 3 divs de imagens menores e as 3 divs de textos das imagens, essa div não é visivel. */
+
+#img_txt{
+    background-color: lightgrey;
+    
+    width: 999px;
+    height: 300px;
+}  
+
+/* Definindo a div img1 para inserir dentro dela a imagem pequena 1 */
+
+/* Esta div utiliza fload: left; para que todas as divs de imagens sejam posicionadas uma ao lado da outra, a partir da esquerda. */
+
+
+#img1{background-color:lightgrey; 
+width: 333px;
+height: 150px;  
+float: left;    
+}
+
+
+/* Definindo a div img2 para inserir dentro dela a imagem pequena 2 */
+
+/* Essa div (img2) foi feita para ficar visualmente diferente no layout de apresentação. Mas todas as divs de imagens pequenas e textos das imagens pequenas podem usar apenas a DIV img1.  */
+
+/* Esta div utiliza fload: left; para que todas as divs de imagens sejam posicionadas uma ao lado da outra (horizontalmente), a partir da esquerda. */
+
+#img2{background-color: lightgrey; 
+width: 333px;
+height: 250px;  
+float: left; 
+line-height: 20px;
+}
+
+/* Definindo a div filme_txt para "segurar" a div do texto do filme e a div do filme */
+
+#filme_txt{
+    background-color: lightgrey;
+    
+    width: 999px;
+    height: 250px;
+} 
+
+/* Definindo a div txt_filme para inserir dentro dela o texto que comenta o filme, esse texto fica do lado esquerdo do filme */
+
+/* Esta div utiliza fload: left; para que todas as divs sejam posicionadas uma ao lado da outra (horizontalmente), a partir da esquerda. */
+
+
+#txt_filme{
+    background-color: lightgrey;
+    
+    width: 300px;
+    height: 250px;
+    float: left;
+} 
+
+/* Definindo a div filme para inserir dentro dela o  filme  */
+
+/* Esta div utiliza fload: left; para que todas as divs sejam posicionadas uma ao lado da outra (horizontalmente), a partir da esquerda. */
+
+
+#filme{
+    background-color: lightgrey;
+    
+    width: 699px;
+    height: 250px;
+    float: left;
+} 
+
+/* Definindo a div rodape para inserir dentro dela os links principais e o voltar ao topo  */
+#design
+{
+    background-color: lightgray;
+    
+    width: 988px;
+    height: 1150px;
+    border-style:solid;
+    text-align: left
+}
+#design_dados
+{
+    background-color: white;
+    
+    width: 970px;
+    height: 1000px;
+    border-style:solid;
+    border-width: 1px;
+    margin: auto;
+    margin-top: +10px;
+}
+#img_design
+{
+    background-color: white;
+    border-style:solid;border-width: 1px;
+    width: 270px;
+    height: 970px;
+    margin-left: +15px;margin-top: +10px;
+    float: left;
+    
+}
+#developers
+{
+    background-color: white;
+    
+    width: 650px;
+    height: 970px;
+    border-style: solid;
+    margin-right: +15px;margin-top: +10px;
+    float: right;
+}
+#aluno1
+{
+    width: 620px;
+    height: 150px;
+    float: right;
+    background-color: white;
+    border-style:solid;border-width: 2px;
+    margin-right: +12px;
+    margin-top: 15px;
+}
+#img_al1{
+    float: left;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+#nome1{
+    width: 500px;
+    height: 130px;
+    float: right;
+    border-style:solid;border-width: 1px;
+    margin-right: 10px;
+    margin-top: 9px;
+}
+
+#aluno2
+{
+    width: 620px;
+    height: 150px;
+    float: right;
+    background-color: white;
+    border-style:solid;border-width: 2px;
+    margin-right: +12px;
+    margin-top: 5px;
+}
+#img_al2{
+    float: left;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+#nome2{
+    width: 500px;
+    height: 130px;
+    float: right;
+    border-style:solid;border-width: 1px;
+    margin-right: 10px;
+    margin-top: 9px;
+}
+#aluno3
+{
+    width: 620px;
+    height: 150px;
+    float: right;
+    background-color: white;
+    border-style:solid;border-width: 2px;
+    margin-right: +12px;
+    margin-top: 5px;
+}
+#img_al3{
+    float: left;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+#nome3{
+    width: 500px;
+    height: 130px;
+    float: right;
+    border-style:solid;border-width: 1px;
+    margin-right: 10px;
+    margin-top: 9px;
+}
+#aluno4
+{
+    width: 620px;
+    height: 150px;
+    float: right;
+    background-color: white;
+    border-style:solid;border-width: 2px;
+    margin-right: +12px;
+    margin-top: 5px;
+}
+#img_al4{
+    float: left;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+#nome4{
+    width: 500px;
+    height: 130px;
+    float: right;
+    border-style:solid;border-width: 1px;
+    margin-right: 10px;
+    margin-top: 9px;
+}
+#aluno5
+{
+    width: 620px;
+    height: 150px;
+    float: right;
+    background-color: white;
+    border-style:solid;border-width: 2px;
+    margin-right: +12px;
+    margin-top: 5px;
+}
+#img_al5{
+    float: left;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+#nome5{
+    width: 500px;
+    height: 130px;
+    float: right;
+    border-style:solid;border-width: 1px;
+    margin-right: 10px;
+    margin-top: 9px;
+}
+#login
+{
+            background-color: white;
+    
+    width: 970px;    
+    height: 1100px;
+    border-style:solid;
+    border-width: 1px;
+    margin: auto;
+    margin-top: +10px;
+}
+#cadastro
+{
+            background-color: white;
+    
+    width: 970px;    
+    height: 1100px;
+    border-style:solid;
+    border-width: 1px;
+    margin: auto;
+    margin-top: +10px;
+}
+#produto1
+{
+    width:999px; 
+    height:400px;
+}
+#produto2
+{
+    width:1000px; 
+    height:400px;
+}
+#produto3
+{
+    width:1000px; 
+    height:400px;
+}
+#produto4
+{
+    width:1000px; 
+    height:400px;
+}
+
+#prod1{background-color:lightgray; 
+width: 300px;
+height: 400px;  
+float: left;   
+    
+    color: black;
+    padding: 11.4px;
+    border: 5px solid #CCC;
+    font-size: 20px;
+}
+
+
+#prod2{background-color:lightgray; 
+width: 300px;
+height: 400px;  
+float: left;  
+    
+    color: black;
+    padding: 11.5px;
+    border: 5px solid #CCC;
+    font-size: 20px;
+}
+
+#prod3{background-color:lightgray; 
+width: 300px;
+height: 400px;  
+float: left; 
+    
+    color: black;
+   padding: 11.6px;
+    border: 5px solid #CCC;
+    font-size: 20px;
+    
+
+}
+#prod4{background-color:lightgray; 
+width: 300px;
+height: 400px;  
+float: left; 
+    
+    color: black;
+   padding: 11.6px;
+    border: 5px solid #CCC;
+    font-size: 20px;
+    
+
+}
+#prod5{background-color:lightgray; 
+width: 300px;
+height: 400px;  
+float: left; 
+    
+    color: black;
+   padding: 11.6px;
+    border: 5px solid #CCC;
+    font-size: 20px;
+    
+
+}
+#prod6{background-color:lightgray; 
+width: 300px;
+height: 400px;  
+float: left; 
+    
+    color: black;
+   padding: 11.6px;
+    border: 5px solid #CCC;
+    font-size: 20px;
+    
+
+}
+
+#prod7{background-color:lightgray; 
+width: 300px;
+height: 400px;  
+float: left; 
+    
+    color: black;
+   padding: 11.6px;
+    border: 5px solid #CCC;
+    font-size: 20px;
+    
+
+}
+
+#prod8{background-color:lightgray; 
+width: 300px;
+height: 400px;  
+float: left; 
+    
+    color: black;
+   padding: 11.6px;
+    border: 5px solid #CCC;
+    font-size: 20px;
+    
+
+}
+
+#prod9{background-color:lightgray; 
+width: 300px;
+height: 400px;  
+float: left; 
+    
+    color: black;
+   padding: 11.6px;
+    border: 5px solid #CCC;
+    font-size: 20px;
+    
+
+}
+#prod10{background-color:lightgray; 
+width: 300px;
+height: 400px;  
+float: left; 
+    
+    color: black;
+   padding: 11.6px;
+    border: 5px solid #CCC;
+    font-size: 20px;
+    
+
+}
+#prod11{background-color:lightgray; 
+width: 300px;
+height: 400px;  
+float: left; 
+    
+    color: black;
+   padding: 11.6px;
+    border: 5px solid #CCC;
+    font-size: 20px;
+    
+
+}
+#prod12{background-color:lightgray; 
+width: 300px;
+height: 400px;  
+float: left; 
+    
+    color: black;
+   padding: 11.6px;
+    border: 5px solid #CCC;
+    font-size: 20px;
+    
+
+}
+
+#cartproduto
+{
+background-color:lightgray; 
+width: 960px;
+height: 400px;  
+float: left; 
+float: left; 
+    
+    color: black;
+   padding: 11.6px;
+    border: 5px solid #CCC;
+    font-size: 20px;
+    
+
+}
+#imgCART
+{
+    float: left;
+    
+}
+#imgCART1
+{
+    float: left;
+    
+}
+#imgCART2
+{
+    float: left;
+    
+}
+#compra
+{
+    background-color:lightgray; 
+width: 960px;
+height: 400px;  
+float: left; 
+float: left; 
+    
+    color: black;
+   padding: 11.6px;
+    border: 5px solid #CCC;
+    font-size: 20px;
+    
+}
+#imgCompra
+{
+    float: left;
+    
+}
+
+.bt {
+border:1px solid #25692A;
+border-radius:4px;
+display:inline-block;
+cursor:pointer;
+font-family:Verdana;
+font-weight:bold;
+font-size:13px;
+padding:6px 10px;
+text-decoration:none;
+} 
+
+.bt-vd {
+border-color:#68b465;
+background:linear-gradient(to bottom, #abd5aa 5%, #68b465 100%);
+box-shadow:inset 0px 1px 0px 0px #e3f1e3;
+color:#fff;
+text-shadow:0px 1px 0px #528009;
+}
+
+
+.bt-lj {
+border-color:#eb9b48;
+background:linear-gradient(to bottom, #f7d6b3 5%, #eb9b48 100%);
+box-shadow:inset 0px 1px 0px 0px #fdf7f0;
+color:#333;
+text-shadow:0px 1px 0px #ffee66;
+}
+
+.bt-az {
+border-color:#46a7f5;
+background:linear-gradient(to bottom, #86c6f8 5%, #46a7f5 100%);
+box-shadow:inset 0px 1px 0px 0px #d7ecfd;
+color:#fff;
+text-shadow:0px 1px 0px #528009;  
+}
+
+.bt-vm {
+border-color:#f61f0e;
+background:linear-gradient(to bottom, #fca8a1 5%, #f61f0e 100%);
+box-shadow:inset 0px 1px 0px 0px #fff4f3;
+color:#fff;
+text-shadow:0px 1px 0px #528009; 
+}
+
+.bt-vd:hover {
+background:linear-gradient(to bottom, #68b465 5%, #abd5aa 100%);
+}
+
+.bt-lj:hover {
+background:linear-gradient(to bottom, #eb9b48 5%, #f7d6b3 100%);
+}
+
+.bt-az:hover {
+background:linear-gradient(to bottom, #46a7f5 5%, #86c6f8 100%);
+}
+
+.bt-vm:hover {
+background:linear-gradient(to bottom, #f61f0e 5%, #fca8a1 100%);
+}
+
+.bt:active {
+position:relative;
+top:2px;}
+
+
+#rodape{
+    background-color: #4294FF;
+    
+    width: 999px;
+    height: 210px;
+    float:left;
+}  
+#login
+{
+    width: 400px;
+    height: 500px;
+    
+    margin-top: 100px;
+}
+#cadastro
+{
+    width: 400px;
+    height: 800px;
+    
+    margin-top: 100px;
+}
+.caixaEndereco
+{
+    width: 360px;
+    height: 30px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -183px;
+    padding-left: 10px;
+        
+}
+.caixaCep
+{
+    width: 360px;
+    height: 30px;
+    position: absolute;
+    margin-top: 270px;
+    margin-left: -183px;
+    padding-left: 10px;
+        
+}
+
+.caixaTelefone
+{
+    width: 360px;
+    height: 30px;
+    position: absolute;
+    margin-top: 345px;
+    margin-left: -183px;
+    padding-left: 10px;
+        
+}
+
+.caixaEmail
+{
+    width: 360px;
+    height: 30px;
+    position: absolute;
+    margin-top: 415px;
+    margin-left: -183px;
+    padding-left: 10px;
+        
+}
+.caixaEmail_Login
+{
+    width: 360px;
+    height: 30px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: -183px;
+    padding-left: 10px;
+        
+}
+.caixaSenha_Login
+{
+    width: 360px;
+    height: 30px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -183px;
+    padding-left: 10px;
+        
+}
+
+
+.caixaSenha
+{
+    width: 360px;
+    height: 30px;
+    position: absolute;
+    margin-top: 485px;
+    margin-left: -183px;
+    padding-left: 10px;
+        
+}
+
+
+.caixaConfSen
+{
+    width: 360px;
+    height: 30px;
+    position: absolute;
+    margin-top: 555px;
+    margin-left: -183px;
+    padding-left: 10px;
+        
+}
+
+
+
+
+.caixaNome
+{
+    width: 360px;
+    height: 30px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: -183px;
+    padding-left: 10px;
+
+}
+.loginGrande
+
+{
+    opacity: 0.6;
+}
+.botaoCadastrar
+{
+    background-color: #4294FF;
+  color: white;
+  padding: 15px 30px;
+  position: absolute;
+    margin-top: 650px;
+    margin-left: -183px;
+  border: none;
+  cursor: pointer;
+  width: 364px;
+}
+.botaoCadastrar:hover
+{
+    opacity: 0.7;
+}
+.botaoLimparCad
+{
+    background-color: #F48436;
+  color: white;
+  padding: 15px 30px;
+  position: absolute;
+    margin-top: 700px;
+    margin-left: -183px;
+  border: none;
+  cursor: pointer;
+  width: 364px;
+}
+.botaoLimparCad:hover{
+    opacity: 0.7;
+}
+.botaoLogin
+{
+    background-color: #4294FF;
+  color: white;
+  padding: 15px 30px;
+  position: absolute;
+    margin-top: 290px;
+    margin-left: -183px;
+  border: none;
+  cursor: pointer;
+  width: 364px;
+}
+.botaoLogin:hover
+{
+    opacity: 0.7;
+}
+.botaoLimpar
+{
+    background-color: #F48436;
+  color: white;
+  padding: 15px 30px;
+  position: absolute;
+    margin-top: 340px;
+    margin-left: -183px;
+  border: none;
+  cursor: pointer;
+  width: 364px;
+}
+.botaoLimpar:hover{
+    opacity: 0.7;
+}
+.botaoCadastre
+{
+    background-color: #3CB371;
+  color: white;
+  padding: 15px 30px;
+  position: absolute;
+    margin-top: 343px;
+    margin-left: -183px;
+  border: none;
+  cursor: pointer;
+  width: 364px;
+}
+.botaoCadastre:hover{
+    opacity: 0.7;
+}
+
+
+.botaoAcesso
+{
+    background-color: #FD7F31;
+  color: white;
+  padding: 10px 20px;
+  position: absolute;
+  margin-top: -26px;
+  margin-left: -70px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+}
+.botaoAcesso:hover{
+    opacity: 0.7;
+}
+.botaoComprar
+{
+  background-color: #FD7F31;
+  color: white;
+  padding: 10px 20px;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: -70px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+}
+.botaoComprar:hover{
+    opacity: 0.7;
+}
+
+
+
+.botaoMenu
+{
+    background-color: #4294FF;
+  color: white;
+  padding: 11px 20px;
+ border: 0.5px solid white;
+ border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+}
+.botaoMenu:hover{
+    opacity: 0.7;
+}
+
+
+
+.txtEmail
+{
+    position: absolute;
+    font-family: verdana;
+    margin-top: 385px;
+    margin-left: 16px;
+    font-size: 15px;
+    
+}
+.txtEmail_Login
+{
+    position: absolute;
+    font-family: verdana;
+    margin-top: 100px;
+    margin-left: 16px;
+    font-size: 15px;
+    
+}
+.txtSenha_Login
+{
+    position: absolute;
+    font-family: verdana;
+    margin-top: 170px;
+    margin-left: 16px;
+    font-size: 15px;
+    
+}
+
+.txtNome
+{
+    position: absolute;
+    font-family: verdana;
+    margin-top: 100px;
+    margin-left: 16px;
+    font-size: 15px;
+    
+}
+.txtEndereco
+{
+    position: absolute;
+    font-family: verdana;
+    margin-top: 170px;
+    margin-left: 16px;
+    font-size: 15px;
+    
+}
+.txtCep
+{
+    position: absolute;
+    font-family: verdana;
+    margin-top: 240px;
+    margin-left: 16px;
+    font-size: 15px;
+    
+}
+.txtTelefone
+{
+    position: absolute;
+    font-family: verdana;
+    margin-top: 310px;
+    margin-left: 16px;
+    font-size: 15px;
+    
+}
+
+.txtConfSenha
+{
+    position: absolute;
+    font-family: verdana;
+    margin-top: 525px;
+    margin-left: 16px;
+    font-size: 15px;
+    
+}
+.txtRobo
+{
+    position: absolute;
+    font-family: verdana;
+    margin-top: 550px;
+    margin-left: 16px;
+    font-size: 15px;
+    
+}
+.txtSenha
+{
+    position: absolute;
+    font-family: verdana;
+    margin-top: 455px;
+    margin-left: 16px;
+    font-size: 15px;
+    
+}
+.bottons_list {
+  
+  
+  display: grid;
+  grid: auto auto auto;
+  grid-template-columns: repeat(2, 4fr);
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  grid-row-gap: 5px;
+ 
+}
+
+#divCaps {
+
+
+   width: 500px;
+   height: 20px;
+   position: absolute;
+   margin-top: 200px;
+   margin-left: 20px;
+  font-family: verdana;
+   text-align: left;
+
+}
+#divCaps p {
+
+   margin-top: -29px;
+   margin-left: 22px;
+  font-family: verdana;
+   text-align: left;
+
+}
+
+#titulo 
+{
+  position:absolute;
+  margin-top: -68px;
+  margin-left: 400px;
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
